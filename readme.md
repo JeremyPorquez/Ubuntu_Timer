@@ -4,9 +4,17 @@ A sample project that triggers a system reboot when pings to google.com fail
 
 ## List of important files
 
-1. /etc/systemd/system/restart.service - The service that calls the restart script
-2. /etc/systemd/system/restart.timer - The timer that calls restart.service. They should have the same filename except the extension.
-3. /home/reboot.sh - The reboot and ping shell script
+1. /etc/systemd/system/restart.service 
+
+    The service that calls the restart script.
+
+2. /etc/systemd/system/restart.timer
+
+    The timer that calls restart.service every 5 seconds. They should have the same filename except the extension.
+
+3. /home/reboot.sh
+
+   The reboot and ping shell script
 
 ## Installation
 
