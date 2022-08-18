@@ -1,0 +1,6 @@
+[Unit]
+Description=Reboot when there's no internet connection
+After=network.target
+
+[Service]
+ExecStart=/home/reboot.sh

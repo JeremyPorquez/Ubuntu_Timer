@@ -1,0 +1,9 @@
+[Unit]
+Description=Restart timer
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=5s
+
+[Install]
+WantedBy=timers.target
